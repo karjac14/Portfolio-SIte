@@ -1,7 +1,7 @@
 # One Down Looking Forward for Eleven More 
 
 
-The first week was a shock, I indeed entered a boot camp. No hanky panky. Starting from the prep-work and the rest of the week, all of us from the class had the taste of brain squeezing experience. 
+The first week was a shock, I indeed entered a boot camp. Starting from the prep-work and the rest of the week, all of us from the class had the taste of brain squeezing experience. 
 
 We learned:
 
