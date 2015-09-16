@@ -1,3 +1,12 @@
 
-- Containers, - arrays and objects
-- Arrays, - push pop shift unshift
+
+
+Ideas for next week:
+
+More DOM
+
+Jquery
+
+CRUD
+
+CSS properties
