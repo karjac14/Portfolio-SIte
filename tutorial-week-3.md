@@ -9,4 +9,6 @@ One of the best thing I learned last week is `box-sizing: border-box`, it makes 
 }
 ```
 
-The above code will set everything to havd border-box.
+The above code will set everything to have `border-box`.
+
+Note that this trick was introduced in CSS3,and that if we need to work with prvious CSS version, this may not work.
