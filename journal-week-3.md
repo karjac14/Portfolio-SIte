@@ -4,8 +4,8 @@ Week three was great, it has a lot of ups and downs. The first day was quite eas
 
 In particular, we learned the following in week three:
 
-CSS - we learned a bunch about this language, like how it is integrated with the DOM and eventually to work around with it. This language (or files) make the web pages really more visually appealing.
+**CSS** - we learned a bunch about this language, like how it is integrated with the DOM and eventually to work around with it. This language (or files) make the web pages really more visually appealing.
 
-Selectors, Properties and Values - while doing the assignments we explored different properties that we can use in enhancing the the DOM and reach our goal of having the correct layout.
+**Selectors, Properties and Values** - while doing the assignments we explored different properties that we can use in enhancing the the DOM and reach our goal of having the correct layout.
 
-Skitching - we practiced skitching or shall we say determining the elements that can be placed in a box. From there we can actually know where position the elements.
+**Skitching** - we practiced skitching or shall we say determining the elements that can be placed in a box. From there we can actually know where position the elements.
