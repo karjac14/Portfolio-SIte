@@ -15,4 +15,6 @@ This can be applied at the top of the css file.
 
 The above code will set everything to have `border-box`.
 
+I myself is still in learning stage of using this technique and hopefully can able to apply this more confidently.
+
 Note that this trick was introduced in CSS3 and was widely used, and that if we need to work with prvious CSS version, this may not work.
