@@ -18,3 +18,5 @@ The above code will set everything to have `border-box`.
 I myself is still in learning stage of using this technique and hopefully can able to apply this more confidently.
 
 Note that this trick was introduced in CSS3 and was widely used, and that if we need to work with prvious CSS version, this may not work.
+
+Disclaimer: according to @al-the-x, this technique has some implications that box model may need to rely to px as measurement of different sizes, making element not so responsive or have fixed measurements. Caveat!
