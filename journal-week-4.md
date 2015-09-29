@@ -1,5 +1,7 @@
 
 
+##Week 4
+
 Week 4 was tough, a lot of things were introduced such as SASS, semantic HTML and the concept of MVC. Jquery and test frameworks such as mocha and chai were re-introduced again. The asisgnments last week were I guess were too much, considering that we only have a single nights to do three of four webpages. 
 
 We re-created the HTML of the blue prints and had learn doing it semantically by using the correct element tags, classes and ids. HTMLs were a little tidious to do but it is something that we actually need to experience doing as it is the DOM where all other files are linked.
