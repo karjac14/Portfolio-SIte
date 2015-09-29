@@ -38,7 +38,7 @@ From the last week's assignemnt, I learned how to link the three parts of the MV
  
  - From the data that we got from the model, we use Jquery again to change, add, or remove classes of the our DOM elements. From there we can alter the behaviour of the html elements. 
  
-     ```$('#F6').addClass('bknight');
-        $('#G8').removeClass('bknight');```
+     `$('#F6').addClass('bknight');
+      $('#G8').removeClass('bknight');`
  
-Surely, there are more ways of linking the MVC architecture and hopefully we can learn them further through more practice.
+- Surely, there are more ways of linking the MVC architecture and hopefully we can learn them further through more practice.
