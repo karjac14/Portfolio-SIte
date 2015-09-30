@@ -18,16 +18,18 @@ From the last week's assignemnt, I learned how to link the three parts of the MV
  
 ####Model to Controller
 
- - When the methods in the main.js are invoked, it executes the statements and operations inside of the block operator.
+ - When the methods in the main.js are invoked, it executes the statements and operations inside of the block operator. Below is an example of the statements that are executed.
  
-  ```if (ctr < moves.length) {
+```
+      if (ctr < moves.length) {
       ctr += 1;
       console.log (ctr);
-      game.applyMove(true,false); ```
+      game.applyMove(true,false); 
+```
       
  - Remember that controller.js depends on the main.js, and not the other way around. In main.js we can't invoked anything in the controller.js. The model ussually holds database and performs operations internally.
  
- - To get the return value of the methods in main.js, what I was assigning the invoked method return value to a variable.
+ - To get the return value of the methods in main.js,  I assigned the return value of the invoked method to a variable.
  
        `game.next();`  to --->   `var arr = game.next();`
        
