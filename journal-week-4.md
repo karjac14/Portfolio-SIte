@@ -10,4 +10,4 @@ I find doing the CSS thru Sass is really more convenient than just doing convent
 
 Jquery was very useful in last week's tasks. The jquery replaces and even improves what the traditional javascript can do. So far we used this library to listen to events and alter the classes of the DOM elements.
 
-We also learned the concept of MVC (Model View Controller), we incorporated all the skills we have learn in html, CSS/SASS and JS/Jquery to construct a more complex MVC.  I look forward that that the whole class will have better grasp in MVC in general.
+We also learned the concept of MVC (Model View Controller), we incorporated all the skills we have learn in html, CSS/SASS and JS/Jquery to construct a more complex MVC.  I look forward that the whole class will have better grasp in MVC in general.
