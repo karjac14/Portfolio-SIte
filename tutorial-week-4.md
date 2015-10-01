@@ -1,6 +1,6 @@
 
 
-From the last week's assignemnt, I learned how to link the three parts of the MVC. I will recap how the three were linked, invoked and return values in the Chessboard assignment. There are many ways of doing these linkages between the M, V and C, but I will show below how I demonstrated these:
+From the last week's assignemnt, I learned how to link the three parts of the MVC, (well, what I think it should be) I will recap how the three were linked, some invocations, and return values in the Chessboard assignment. There may be more ways of doing these linkages between the M, V and C, but I will show below how I demonstrated them:
 
 ####View to Controller
 
