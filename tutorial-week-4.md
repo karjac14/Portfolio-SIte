@@ -1,4 +1,5 @@
 
+_Edit: This tutorial is an explanation of what I did learned in Week 4 Chessboard assignement. With chess 2.0 came in this week, that has more emphasized requirements and starting points, some parts may not be relevant for chess 2.0.
 
 From the last week's assignemnt, I learned how to link the three parts of the MVC, (well, what I think it should be) I will recap how the three were linked, some invocations, and return values in the Chessboard assignment. There may be more ways of doing these linkages between the M, V and C, but I will show below how I demonstrated them:
 
