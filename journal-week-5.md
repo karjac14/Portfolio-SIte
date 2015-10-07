@@ -6,8 +6,8 @@ Hooaray! its week six now! (last week was week 5) I guess this is the stage wher
 
 In week 5, we learned about API, more of testing using Mocha and Chai, and the great MVC again.
 
-API -
+API - we were introduced to the concept of API and it uses. I had hard time of grasping thing about API and looking forward to learn it overtime through practice and experience.
 
-Mocha & Chai -
+Mocha & Chai - Again, these test frameworks were brought up again. I guess its time that we learn these two. From setting up the tests and implemnting it in a test.html
 
-MVC -
+MVC - The hardest chessboard that I ever played. It was great that going back to this project gave us more understanding of the MVC. 
