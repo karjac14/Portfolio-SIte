@@ -8,7 +8,7 @@ _By: Jason Shapiro_
 
 #####Why we encapsulate data?
 
-Encapsulation includes the idea that the data of an object should not be directly exposed.  Instead, callers that want to achieve a given result are coaxed into proper usage by invoking methods (rather than accessing the data directly).
+Encapsulation includes the idea that the data of an object should not be directly exposed.  Instead, callers that want to achieve a given result are coaxed into proper usage by invoking methods (rather than accessing the data directly). _(Shapiro)_
 
 #####How do we do it exactly?
 
