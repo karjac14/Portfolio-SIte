@@ -1,0 +1,25 @@
+{
+  "name": "karjac14.github.io",
+  "version": "0.0.2",
+  "homepage": "https://github.com/karjac14/karjac14.github.io",
+  "authors": [
+    "Karlo Eleuterio <karloe@gmail.com>"
+  ],
+  "description": "Blog",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.*",
+    "modernizr": "~3.1.0",
+    "normalize-strings": "normalize#~1.0.4",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
