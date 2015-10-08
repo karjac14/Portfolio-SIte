@@ -8,7 +8,7 @@ SASSSSS!
 
 - Installing SASS
 	SASS can be installed fro the terminal.
-	Key-in: npm install node-sass 
+	Key-in: npm install node-sass
 
 - Coding with SASS
 	coding in node-sass is simple and easier that normal css.... zzzzz
