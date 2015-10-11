@@ -77,31 +77,76 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  background: #282C34; }
+
 *, *::after, *::before {
   box-sizing: border-box; }
 
-body .container {
+body div.container {
   margin: 0 auto;
-  width: 80%; }
-  body .container::after {
-    content: "";
-    display: table;
-    clear: both;
-    background: #FFFFFF; }
-  body .container .col {
-    background: #BBBBBB;
-    float: left;
-    width: 8.33%;
-    height: 600px;
-    padding-right: 20px;
-    word-wrap: normal; }
-    body .container .col::after {
-      content: " ";
-      background: #FFFFFF; }
-  body .container .col:last-of-type {
-    padding-right: 0px; }
-  body .container .col:nth-of-type(even) {
-    background: #888888; }
+  width: 85%; }
+  body div.container header {
+    display: table-cell;
+    width: 90vw;
+    height: 46vw;
+    background-image: url("../img/DSC_2618d.jpg");
+    background-position: center;
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    border: 0.5px solid #BBBBBB;
+    vertical-align: middle;
+    text-align: center; }
+    body div.container header div.container-head {
+      display: inline-block; }
+      body div.container header div.container-head h2 {
+        font-size: 46px;
+        font-weight: 400;
+        margin: 0 auto; }
+        body div.container header div.container-head h2 span {
+          font-size: 46px; }
+      body div.container header div.container-head h1 {
+        font-size: 65px;
+        font-weight: 700;
+        margin: 0px 115px auto; }
+      body div.container header div.container-head h3 {
+        font-size: 28px;
+        font-weight: 400;
+        margin: 115px auto;
+        text-shadow: 1px 1px #282C34; }
+      body div.container header div.container-head a.header-button {
+        background-color: #00A69A;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.3;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #ffffff;
+        border-radius: 3px;
+        box-shadow: 0 3px 0 #00736b;
+        padding: 10px 16px;
+        text-decoration: none;
+        position: relative;
+        top: -70px; }
+  body div.container nav {
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #171717;
+    height: 4vw;
+    border-bottom: 1px solid #474747; }
+    body div.container nav a {
+      display: inline-block;
+      text-decoration: none;
+      vertical-align: middle;
+      color: #A1A1A1;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: auto 20px; }
 
 /* ==========================================================================
    Helper classes
