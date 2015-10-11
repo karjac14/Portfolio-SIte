@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --directory startPath='src/index.html'",
+    "start": "browser-sync start --server --directory startPath='src/index.html' files='src/inderx.html, css/*.css'",
     "sass" : "node-sass src/scss/main.scss src/css/main.css"
   },
   "repository": {
