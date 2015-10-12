@@ -8,12 +8,22 @@
 
 $(document).ready(function(){
 	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 40;
+	   var navHeight = $( window ).height() - 60;
 			 if ($(window).scrollTop() > navHeight) {
 				 $('.nav-main').addClass('stay-top');
+         $('.nav-filler').addClass('filling');
 			 }
 			 else {
 				 $('.nav-main').removeClass('stay-top');
+         $('.nav-filler').removeClass('filling');
 			 }
 		});
+
+    $('#nav-toggle').on('click', function (){
+      $('.nav-menu').slideToggle('50');
+    })
+
+
+
+
 	});

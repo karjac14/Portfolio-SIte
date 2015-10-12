@@ -85,74 +85,440 @@ body {
 *, *::after, *::before {
   box-sizing: border-box; }
 
-body div.container {
-  margin: 0 auto;
-  width: 85%; }
-  body div.container header {
-    display: table-cell;
-    width: 90vw;
-    height: 46vw;
-    background-image: url("../img/DSC_2618d.jpg");
-    background-position: center;
-    background-size: 100% 120%;
-    background-repeat: no-repeat;
-    border: 0.5px solid #BBBBBB;
-    vertical-align: middle;
-    text-align: center; }
-    body div.container header div.container-head {
-      display: inline-block; }
-      body div.container header div.container-head h2 {
-        font-size: 46px;
-        font-weight: 400;
-        margin: 0 auto; }
-        body div.container header div.container-head h2 span {
-          font-size: 46px; }
-      body div.container header div.container-head h1 {
-        font-size: 65px;
-        font-weight: 700;
-        margin: 0px 115px auto; }
-      body div.container header div.container-head h3 {
-        font-size: 28px;
-        font-weight: 400;
-        margin: 115px auto;
-        text-shadow: 1px 1px #282C34; }
-      body div.container header div.container-head a.header-button {
-        background-color: #00A69A;
-        font-family: 'Raleway', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.3;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #ffffff;
-        border-radius: 3px;
-        box-shadow: 0 3px 0 #00736b;
-        padding: 10px 16px;
-        text-decoration: none;
-        position: relative;
-        top: -70px; }
-  body div.container nav.nav-main {
-    display: block;
-    vertical-align: middle;
-    text-align: center;
-    background-color: #171717;
-    height: 40px;
-    border-bottom: 1px solid #474747; }
-    body div.container nav.nav-main a {
-      display: inline-block;
-      text-decoration: none;
+@media (min-width: 992px) {
+  body div.container {
+    margin: 0 auto;
+    width: 990px; }
+    body div.container span.top-filler-mobile {
+      display: none; }
+    body div.container header {
+      display: table-cell;
+      width: 990px;
+      height: 46vw;
+      background-image: url("../img/DSC_2618s.jpg");
+      background-position: center;
+      background-size: 100% 120%;
+      background-repeat: no-repeat;
+      border: 0.5px solid #BBBBBB;
       vertical-align: middle;
-      color: #A1A1A1;
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin: auto 20px; }
-    body div.container nav.nav-main.stay-top {
+      text-align: center; }
+      body div.container header div.container-head {
+        display: inline-block; }
+        body div.container header div.container-head h2 {
+          font-size: 46px;
+          font-weight: 400;
+          margin: 0 auto; }
+          body div.container header div.container-head h2 span {
+            font-size: 46px; }
+        body div.container header div.container-head h1 {
+          font-size: 65px;
+          font-weight: 700;
+          margin: 0px 115px auto; }
+        body div.container header div.container-head h3 {
+          font-size: 28px;
+          font-weight: 400;
+          margin: 115px auto;
+          text-shadow: 1px 1px #282C34; }
+        body div.container header div.container-head a.header-button {
+          background-color: #00A69A;
+          font-family: 'Raleway', sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.3;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: #ffffff;
+          border-radius: 3px;
+          box-shadow: 0 3px 0 #00736b;
+          padding: 10px 16px;
+          text-decoration: none;
+          position: relative;
+          top: -70px; }
+    body div.container nav.nav-main {
+      display: block;
+      vertical-align: middle;
+      text-align: center;
+      background-color: #171717;
+      height: 60px;
+      border-bottom: 1px solid #474747; }
+      body div.container nav.nav-main h2 {
+        display: none; }
+      body div.container nav.nav-main a#nav-toggle {
+        display: none; }
+      body div.container nav.nav-main section.nav-menu a {
+        display: inline-block;
+        text-decoration: none;
+        vertical-align: middle;
+        color: #A1A1A1;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 23px 20px; }
+      body div.container nav.nav-main.stay-top {
+        position: fixed;
+        top: 0px;
+        height: 60px;
+        width: 85%;
+        z-index: 1; }
+    body div.container div.nav-filler {
+      display: block;
+      height: 0px;
+      width: 100%; }
+      body div.container div.nav-filler.filling {
+        height: 50px; }
+    body div.container #about-me {
+      margin: 0px auto;
+      display: block;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width: 100%;
+      border-bottom: 1px solid #474747; }
+      body div.container #about-me:after {
+        content: " ";
+        clear: both; }
+      body div.container #about-me article {
+        margin-left: 5%;
+        display: inline-block;
+        width: 60%; }
+        body div.container #about-me article h2.my-name {
+          font-weight: 700;
+          font-size: 28px; }
+          body div.container #about-me article h2.my-name span.pronun {
+            font-style: italic;
+            font-weight: 200;
+            font-size: 18px;
+            color: #00A69A; }
+        body div.container #about-me article h3.my-intro {
+          font-size: 20px;
+          font-weight: 200; }
+        body div.container #about-me article span.my-line {
+          display: block;
+          height: 4px;
+          width: 200px;
+          background-color: #00A69A; }
+        body div.container #about-me article p {
+          text-align: left; }
+          body div.container #about-me article p span.contact {
+            color: #00A69A;
+            font-weight: 700; }
+      body div.container #about-me img {
+        margin-right: 5%;
+        float: right;
+        display: inline-block;
+        width: 25%; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body div.container {
+    margin: 0 auto;
+    width: 100%; }
+    body div.container span.top-filler-mobile {
+      display: block;
+      height: 60px;
+      margin: 0px 0px;
+      width: 100%; }
+    body div.container header {
+      width: 100%;
+      height: 46vw;
+      background-image: url("../img/DSC_2618s.jpg");
+      background-position: center;
+      background-size: 100% 120%;
+      background-repeat: no-repeat;
+      border: 0.5px solid #BBBBBB;
+      vertical-align: middle;
+      text-align: center; }
+      body div.container header div.container-head {
+        display: inline-block; }
+        body div.container header div.container-head h2 {
+          font-size: 46px;
+          font-weight: 400;
+          margin: 0 auto; }
+          body div.container header div.container-head h2 span {
+            font-size: 46px; }
+        body div.container header div.container-head h1 {
+          font-size: 65px;
+          font-weight: 700;
+          margin: 0px 115px auto; }
+        body div.container header div.container-head h3 {
+          font-size: 28px;
+          font-weight: 400;
+          margin: 115px auto;
+          text-shadow: 1px 1px #282C34; }
+        body div.container header div.container-head a.header-button {
+          background-color: #00A69A;
+          font-family: 'Raleway', sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.3;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: #ffffff;
+          border-radius: 3px;
+          box-shadow: 0 3px 0 #00736b;
+          padding: 10px 16px;
+          text-decoration: none;
+          position: relative;
+          top: -70px; }
+    body div.container nav.nav-main {
       position: fixed;
       top: 0px;
-      height: 40px;
-      width: 85%;
-      z-index: 1; }
+      display: block;
+      background-color: #171717;
+      height: 60px;
+      width: 100%;
+      border-bottom: 1px solid #474747; }
+      body div.container nav.nav-main h2 {
+        font-size: 20px;
+        margin-left: 16px;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        color: gray;
+        display: inline-block; }
+      body div.container nav.nav-main #nav-toggle {
+        display: inline-block;
+        float: right;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-right: 12px;
+        width: 44px;
+        height: 44px;
+        border-radius: 3px;
+        background-color: #00A69A;
+        position: relative; }
+        body div.container nav.nav-main #nav-toggle span.patty {
+          position: absolute;
+          left: 5px;
+          top: 20px; }
+        body div.container nav.nav-main #nav-toggle span.patty, body div.container nav.nav-main #nav-toggle span.patty:before, body div.container nav.nav-main #nav-toggle span.patty:after {
+          cursor: pointer;
+          border-radius: 1px;
+          height: 5px;
+          width: 34px;
+          background-color: white;
+          position: absolute;
+          display: block;
+          content: '';
+          z-index: 99; }
+        body div.container nav.nav-main #nav-toggle span.patty:before {
+          top: -10px; }
+        body div.container nav.nav-main #nav-toggle span.patty:after {
+          bottom: -10px; }
+      body div.container nav.nav-main section.nav-menu {
+        display: none;
+        float: right;
+        position: fixed;
+        top: 60px;
+        right: 0px;
+        width: 80%;
+        height: auto;
+        background-color: #171717; }
+        body div.container nav.nav-main section.nav-menu a {
+          display: block;
+          text-decoration: none;
+          vertical-align: middle;
+          color: #A1A1A1;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin: 18px 20px; }
+    body div.container div.nav-filler {
+      display: block;
+      height: 0px;
+      width: 100%; }
+      body div.container div.nav-filler.filling {
+        height: 50px; }
+    body div.container #about-me {
+      margin: 0px auto;
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 50px;
+      width: 100%;
+      border-bottom: 1px solid #474747; }
+      body div.container #about-me:after {
+        content: " ";
+        clear: both; }
+      body div.container #about-me article {
+        margin-left: 5%;
+        display: inline-block;
+        width: 90%; }
+        body div.container #about-me article h2.my-name {
+          font-weight: 500;
+          font-size: 35px;
+          letter-spacing: 1px;
+          line-height: 1.1; }
+          body div.container #about-me article h2.my-name span.pronun {
+            display: none; }
+        body div.container #about-me article h3.my-intro {
+          font-size: 20px;
+          font-weight: 200; }
+        body div.container #about-me article span.my-line {
+          display: block;
+          height: 4px;
+          width: 200px;
+          background-color: #00A69A; }
+        body div.container #about-me article p {
+          text-align: left; }
+          body div.container #about-me article p span.contact {
+            color: #00A69A;
+            font-weight: 700; }
+      body div.container #about-me img {
+        display: none; } }
+
+@media (min-width: 392px) and (max-width: 767px) {
+  body div.container {
+    margin: 0 auto;
+    width: 100%; }
+    body div.container span.top-filler-mobile {
+      display: block;
+      height: 60px;
+      margin: 0px 0px;
+      width: 100%; }
+    body div.container header {
+      width: 100%;
+      height: 46vw;
+      background-image: url("../img/DSC_2618s.jpg");
+      background-position: center;
+      background-size: 100% 120%;
+      background-repeat: no-repeat;
+      border: 0.5px solid #BBBBBB;
+      vertical-align: middle;
+      text-align: center; }
+      body div.container header div.container-head {
+        display: inline-block; }
+        body div.container header div.container-head h2 {
+          font-size: 22px;
+          font-weight: 400;
+          margin: 0 auto; }
+          body div.container header div.container-head h2 span {
+            font-size: 22px; }
+        body div.container header div.container-head h1 {
+          font-size: 35px;
+          font-weight: 700;
+          margin: 0px 55px auto; }
+        body div.container header div.container-head h3 {
+          font-size: 16px;
+          font-weight: 200;
+          margin: 60px auto;
+          text-shadow: 1px 1px #282C34; }
+        body div.container header div.container-head a.header-button {
+          display: none;
+          background-color: #00A69A;
+          font-family: 'Raleway', sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.3;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: #ffffff;
+          border-radius: 3px;
+          box-shadow: 0 3px 0 #00736b;
+          padding: 10px 16px;
+          text-decoration: none;
+          position: relative;
+          top: -70px; }
+    body div.container nav.nav-main {
+      position: fixed;
+      top: 0px;
+      display: block;
+      background-color: #171717;
+      height: 60px;
+      width: 100%;
+      border-bottom: 1px solid #474747; }
+      body div.container nav.nav-main h2 {
+        font-size: 20px;
+        margin-left: 16px;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        color: gray;
+        display: inline-block; }
+      body div.container nav.nav-main #nav-toggle {
+        display: inline-block;
+        float: right;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-right: 12px;
+        width: 44px;
+        height: 44px;
+        border-radius: 3px;
+        background-color: #00A69A;
+        position: relative; }
+        body div.container nav.nav-main #nav-toggle span.patty {
+          position: absolute;
+          left: 5px;
+          top: 20px; }
+        body div.container nav.nav-main #nav-toggle span.patty, body div.container nav.nav-main #nav-toggle span.patty:before, body div.container nav.nav-main #nav-toggle span.patty:after {
+          cursor: pointer;
+          border-radius: 1px;
+          height: 5px;
+          width: 34px;
+          background-color: white;
+          position: absolute;
+          display: block;
+          content: '';
+          z-index: 99; }
+        body div.container nav.nav-main #nav-toggle span.patty:before {
+          top: -10px; }
+        body div.container nav.nav-main #nav-toggle span.patty:after {
+          bottom: -10px; }
+      body div.container nav.nav-main section.nav-menu {
+        display: none;
+        float: right;
+        position: fixed;
+        top: 60px;
+        right: 0px;
+        width: 80%;
+        height: auto;
+        background-color: #171717; }
+        body div.container nav.nav-main section.nav-menu a {
+          display: block;
+          text-decoration: none;
+          vertical-align: middle;
+          color: #A1A1A1;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin: 18px 20px; }
+    body div.container div.nav-filler {
+      display: block;
+      height: 0px;
+      width: 100%; }
+      body div.container div.nav-filler.filling {
+        height: 50px; }
+    body div.container #about-me {
+      margin: 0px auto;
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 50px;
+      width: 100%;
+      border-bottom: 1px solid #474747; }
+      body div.container #about-me:after {
+        content: " ";
+        clear: both; }
+      body div.container #about-me article {
+        margin-left: 5%;
+        display: inline-block;
+        width: 90%; }
+        body div.container #about-me article h2.my-name {
+          font-weight: 500;
+          font-size: 35px;
+          letter-spacing: 1px;
+          line-height: 1.1; }
+          body div.container #about-me article h2.my-name span.pronun {
+            display: none; }
+        body div.container #about-me article h3.my-intro {
+          font-size: 20px;
+          font-weight: 200; }
+        body div.container #about-me article span.my-line {
+          display: block;
+          height: 4px;
+          width: 200px;
+          background-color: #00A69A; }
+        body div.container #about-me article p {
+          text-align: left; }
+          body div.container #about-me article p span.contact {
+            color: #00A69A;
+            font-weight: 700; }
+      body div.container #about-me img {
+        display: none; } }
 
 /* ==========================================================================
    Helper classes
