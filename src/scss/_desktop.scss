@@ -60,12 +60,12 @@ body {
         }
       }
     } //header
-    nav {
+    nav.nav-main {
       display: block;
       vertical-align: middle;
       text-align: center;
       background-color: #171717;
-      height: 4vw;
+      height: 40px;
       border-bottom: 1px solid #474747;
       a {
         display: inline-block;
@@ -76,6 +76,13 @@ body {
         font-weight: 700;
         text-transform: uppercase;
         margin: auto 20px;
+      }
+      &.stay-top {
+        position: fixed;
+        top: 0px;
+        height: 40px;
+        width: 85%;
+        z-index: 1;
       }
     }
     #about-me {

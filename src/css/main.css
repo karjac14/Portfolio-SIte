@@ -131,14 +131,14 @@ body div.container {
         text-decoration: none;
         position: relative;
         top: -70px; }
-  body div.container nav {
+  body div.container nav.nav-main {
     display: block;
     vertical-align: middle;
     text-align: center;
     background-color: #171717;
-    height: 4vw;
+    height: 40px;
     border-bottom: 1px solid #474747; }
-    body div.container nav a {
+    body div.container nav.nav-main a {
       display: inline-block;
       text-decoration: none;
       vertical-align: middle;
@@ -147,6 +147,12 @@ body div.container {
       font-weight: 700;
       text-transform: uppercase;
       margin: auto 20px; }
+    body div.container nav.nav-main.stay-top {
+      position: fixed;
+      top: 0px;
+      height: 40px;
+      width: 85%;
+      z-index: 1; }
 
 /* ==========================================================================
    Helper classes
