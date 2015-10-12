@@ -1,4 +1,4 @@
-//screen 1100 and over
+@media (min-width: 992px){
 
 $accentcolor: #00A69A;
 $accentcolorshadow: #00736b;
@@ -7,12 +7,15 @@ $accentcolorshadow: #00736b;
 body {
   div.container {
     margin: 0 auto;
-    width: 85%;
+    width: 990px;
+    span.top-filler-mobile {
+      display: none;
+    }
     header {
       display: table-cell;
-      width: 90vw;
+      width: 990px;
       height: 46vw;
-      background-image: url("../img/DSC_2618d.jpg");
+      background-image: url("../img/DSC_2618s.jpg");
       background-position: center;
       background-size: 100% 120%;
       background-repeat: no-repeat;
@@ -60,27 +63,99 @@ body {
         }
       }
     } //header
-    nav {
+    nav.nav-main {
       display: block;
       vertical-align: middle;
       text-align: center;
       background-color: #171717;
-      height: 4vw;
+      height: 60px;
       border-bottom: 1px solid #474747;
-      a {
-        display: inline-block;
-        text-decoration: none;
-        vertical-align: middle;
-        color: #A1A1A1;
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin: auto 20px;
+      h2 {
+        display: none;
+      }
+      a#nav-toggle{
+        display: none;
+      }
+      section.nav-menu{
+        a {
+          display: inline-block;
+          text-decoration: none;
+          vertical-align: middle;
+          color: #A1A1A1;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin: 23px 20px;
+        }
+      }
+      &.stay-top {
+        position: fixed;
+        top: 0px;
+        height: 60px;
+        width: 85%;
+        z-index: 1;
+      }
+    }
+    div.nav-filler {
+      display: block;
+      height: 0px;
+      width: 100%;
+      &.filling{
+        height: 50px;
       }
     }
     #about-me {
+      margin: 0px auto;
+      display: block;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width: 100%;
+      border-bottom: 1px solid #474747;
+      &:after {
+        content: " ";
+        clear: both;
+      }
+      article{
+        margin-left: 5%;
+        display: inline-block;
+        width: 60%;
+        h2.my-name{
+          font-weight: 700;
+          font-size: 28px;
+          span.pronun {
+            font-style: italic;
+            font-weight: 200;
+            font-size: 18px;
+            color: $accentcolor;
+          }
+        }
+        h3.my-intro {
+          font-size: 20px;
+          font-weight: 200;
+        }
+        span.my-line {
+          display: block;
+          height: 4px;
+          width: 200px;
+          background-color: $accentcolor;
+        }
+        p{
+          text-align: left;
+          span.contact {
+            color: $accentcolor;
+            font-weight: 700;
+        }
+      }
+    }
+      img {
+        margin-right: 5%;
+        float: right;
+        display: inline-block;
+        width: 25%;
+      }
 
     }
 
   } //container
-}
+} //body
+} //desktop view
