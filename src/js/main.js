@@ -21,9 +21,13 @@ $(document).ready(function(){
 
     $('#nav-toggle').on('click', function (){
       $('.nav-menu').slideToggle('50');
-    })
+    });
 
-
+		function blinker() {
+		  $('.cursor').fadeOut(300);
+		  $('.cursor').fadeIn(300);
+		}
+		setInterval(blinker, 600);
 
 
 	});

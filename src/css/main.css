@@ -272,13 +272,14 @@ body {
         margin-top: 11px;
         margin-bottom: 11px;
         color: gray;
-        display: inline-block; }
+        display: inline-block;
+        letter-spacing: 5px; }
       body div.container nav.nav-main #nav-toggle {
         display: inline-block;
         float: right;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        margin-right: 12px;
+        position: absolute;
+        top: 8px;
+        right: 12px;
         width: 44px;
         height: 44px;
         border-radius: 3px;
@@ -386,8 +387,7 @@ body {
         display: inline-block; }
         body div.container header div.container-head h2 {
           font-size: 22px;
-          font-weight: 400;
-          margin: 0 auto; }
+          font-weight: 400; }
           body div.container header div.container-head h2 span {
             font-size: 22px; }
         body div.container header div.container-head h1 {
@@ -429,7 +429,8 @@ body {
         margin-top: 11px;
         margin-bottom: 11px;
         color: gray;
-        display: inline-block; }
+        display: inline-block;
+        letter-spacing: 5px; }
       body div.container nav.nav-main #nav-toggle {
         display: inline-block;
         float: right;

@@ -81,10 +81,12 @@ body {
         margin-bottom: 11px;
         color: gray;
         display: inline-block;
+        letter-spacing: 5px;
       }
       #nav-toggle{
         display: inline-block;
         float: right;
+        position: absolute;
         margin-top: 8px;
         margin-bottom: 8px;
         margin-right: 12px;
