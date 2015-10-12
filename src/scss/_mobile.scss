@@ -30,7 +30,6 @@ body {
         h2 {
           font-size: 22px;
           font-weight: 400;
-          margin: 0 auto;
           span {
             font-size: 22px;
           }
@@ -82,6 +81,7 @@ body {
         margin-bottom: 11px;
         color: gray;
         display: inline-block;
+        letter-spacing: 5px;
       }
       #nav-toggle{
         display: inline-block;
