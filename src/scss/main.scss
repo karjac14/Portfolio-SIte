@@ -95,8 +95,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@import 'common';
+@import 'desktop';
+@import 'tablet';
+@import 'mobile';
 
-@import 'grid';
+
 
 
 
