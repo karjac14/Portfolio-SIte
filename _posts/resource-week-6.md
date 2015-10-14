@@ -12,4 +12,4 @@ Webpages today are very interactive and full of features which is one of the key
 
 #####How was it done?
 
-Well the link gives a download link of the source code. Though it is ready to use, it is important to dig in ho the code works. The link shows how the jquery and css, as well as the html works together to form this wonderful feature.
+Well the link gives a download link of the source code. Though it is ready to use, it is important for us to dig in on the code works. The link shows how the JQuery's event listeners and functions as well as css and html works together to form this wonderful feature.
