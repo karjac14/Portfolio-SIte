@@ -1,11 +1,21 @@
 body {
   font-family: 'Raleway', sans-serif;
-  color: white;
-  background: #282C34;
 }
 
-*, *::after, *::before {
-  box-sizing: border-box;
+@media (min-width: 1200px) {
+  .navbar {
+    min-height: 70px;
+  }
+  .navbar-brand{
+
+    padding-top: 25px;
+  }
+  .navbar-right{
+    padding-top: 8px;
+  }
+
 }
 
-$accentcolor: #00A69A;
+.btn {
+  border-radius: 500px;
+}
