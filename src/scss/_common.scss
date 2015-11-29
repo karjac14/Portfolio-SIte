@@ -1,21 +1,162 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+$blue: #288ad6;
+$blue-dark: #1877A6;
+//navbar
+.navbar {
+  background: $blue;
+  .navbar-brand{
+    color: white;
+    a{
+      color: white;
+    }
+  }
+  .navbar-right{
+    color: white;
+    a{
+      color: white;
+    }
+  }
 }
 
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: $blue-dark;
+}
+
+
+//navbar size at lg screen
 @media (min-width: 1200px) {
   .navbar {
     min-height: 70px;
   }
   .navbar-brand{
-
     padding-top: 25px;
+    font-size: 2em;
+    font-weight: 400;
   }
   .navbar-right{
-    padding-top: 8px;
+    padding-top: 9px;
+    font-size: 2em;
+    font-weight: 400;
   }
+}
+
+.jumbotron {
+
+  $green: #16c98d;
+  $red: #fa5e5b;
+  $orange: #ffc83f;
+  $gray: #67747c;
+  width: 104%;
+
+  @media (min-width: 1200px) {
+      padding-top: 11em;
+      padding-bottom: 11em;
+  }
+  font-family: 'Inconsolata';
+  background-color: #2B3642;
+  background: linear-gradient(rgba(30,34,43,0.85), rgba(30,34,43,0.85)), url('../img/jumbotron-bg.jpg') no-repeat center;
+  background-size: cover;
+  margin-bottom: 0px;
+  //jumbotron note code style
+  h2.jumbotron-code {
+    font-size: 3.4em;
+    @media (min-width: 300px) {
+        font-size: 1.8em;
+    }
+    @media (min-width: 600px) {
+        font-size: 2.8em;
+    }
+    color: #ABB2BF;
+    display: inline-block;
+    // line-height: 0.6;
+    .code-top {
+      margin-top: 40px;
+    }
+    .code-bottom {
+      margin-bottom: 2em;
+    }
+    span.jumbotron-code-green{
+      color: $green;
+    }
+    span.jumbotron-code-orange{
+      color: $orange;
+    }
+    span.jumbotron-code-italic{
+      font-style: italic;
+      color: $gray;
+      span.jumbotron-code-red{
+        color: $red;
+      }
+    }
+  }
+}
+
+.portfolio {
+  padding: 0px;
 
 }
 
+div.portfolio {
+  list-style: none;
+  min-height: 300px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: white;
+    .port-desc{
+      position: absolute;
+      left: 0%;
+      bottom: 0px;
+      width: 100%;
+      background-color: $blue;
+      font-size: 1.5em;
+      padding: 0.75em 0.5em;
+      margin: 0px;
+      display: none;
+    }
+  }
+
+  &.port-ziptrip {
+    background-color: #45AAA6;
+    img{
+      width: 50%;
+      position: absolute;
+      top: 25%;
+      left: 25%;
+    }
+    &:hover a .port-desc {
+      display: inline-block;
+    }
+  }
+  &.port-dyel {
+    background-color: #346784;
+    img{
+      width: 65%;
+      position: absolute;
+      top: 30%;
+      left: 18%;
+    }
+    &:hover a .port-desc {
+      display: inline-block;
+    }
+  }
+}
+
+
+
+
 .btn {
   border-radius: 500px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $blue;
+    border-color: $blue;
 }
