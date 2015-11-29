@@ -5,18 +5,18 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --directory startPath='src/index.html'",
+    "start": "browser-sync start --server --directory startPath='src/index.html' --files='index.html', 'css/custom.css'",
     "sass" : "node-sass src/scss/main.scss src/css/custom.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/karjac14/karjac14.github.io.git"
+    "url": "git+https://karjac14@github.com/karjac14/karjac14.github.io.git"
   },
   "keywords": [
-    "My",
-    "Git"
+    "Karlo Eleuterio",
+    "Blog"
   ],
-  "author": "Karlo karloe@gmail.com",
+  "author": "Karlo Eleuterio karloe@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/karjac14/karjac14.github.io/issues"
