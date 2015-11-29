@@ -1,20 +1,122 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
+//navbar
+.navbar {
+  background: #5E9CA0;
+  .navbar-brand{
+    color: white;
+    a{
+      color: white;
+    }
+  }
+  .navbar-right{
+    color: white;
+    a{
+      color: white;
+    }
+  }
+}
+
+//navbar size at lg screen
 @media (min-width: 1200px) {
   .navbar {
     min-height: 70px;
   }
   .navbar-brand{
-
     padding-top: 25px;
+    font-size: 2em;
+    font-weight: 500;
   }
   .navbar-right{
     padding-top: 8px;
+    font-size: 2em;
+    font-weight: 500;
   }
 
 }
+
+.jumbotron {
+  // $cyan: #0fdebd;
+  // $blue: #288ad6;
+  // $purple: #ff708e;
+  $green: #16c98d;
+  $red: #fa5e5b;
+  $orange: #ffc83f;
+  // $light-orange: #feef6d;
+  // $very-light-gray: #dbe6ec;
+  // $light-gray: #99a9b3;
+  $gray: #67747c;
+  // $dark-gray: #3b444f;
+  // $very-dark-gray: #2c3643;
+  // $softblue: #8abee5;
+  // $softgreen: #c7e6aa;
+  @media (min-width: 1200px) {
+      padding-top: 6em;
+      padding-bottom: 6em;
+  }
+  font-family: 'Inconsolata';
+  background-color: #2B3642;
+  background: linear-gradient(rgba(30,34,43,0.85), rgba(30,34,43,0.85)), url('../img/jumbotron-bg.jpg') no-repeat center;
+  background-size: cover;
+  margin-bottom: 0px;
+  //jumbotron note code style
+  h2.jumbotron-code {
+    font-size: 3em;
+    color: #ABB2BF;
+    display: inline-block;
+    // line-height: 0.6;
+    .code-top {
+      margin-top: 40px;
+    }
+    .code-bottom {
+      margin-bottom: 1em;
+    }
+    span.jumbotron-code-green{
+      color: $green;
+    }
+    span.jumbotron-code-orange{
+      color: $orange;
+    }
+    span.jumbotron-code-italic{
+      font-style: italic;
+      color: $gray;
+      span.jumbotron-code-red{
+        color: $red;
+      }
+    }
+  }
+}
+
+.portfolio {
+  padding: 0px;
+
+}
+
+li.portfolio {
+  list-style: none;
+  min-height: 200px;
+  text-align: center;
+
+  &.port-ziptrip {
+    background-color: #45AAA6;
+    img{
+      width: 50%;
+      vertical-align: middle;
+    }
+  }
+  &.port-dyel {
+    background-color: #346784;
+    img{
+      width: 50%;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+
 
 .btn {
   border-radius: 500px;

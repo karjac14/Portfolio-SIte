@@ -78,15 +78,76 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Nunito', sans-serif; }
+
+.navbar {
+  background: #5E9CA0; }
+  .navbar .navbar-brand {
+    color: white; }
+    .navbar .navbar-brand a {
+      color: white; }
+  .navbar .navbar-right {
+    color: white; }
+    .navbar .navbar-right a {
+      color: white; }
 
 @media (min-width: 1200px) {
   .navbar {
     min-height: 70px; }
   .navbar-brand {
-    padding-top: 25px; }
+    padding-top: 25px;
+    font-size: 2em;
+    font-weight: 500; }
   .navbar-right {
-    padding-top: 8px; } }
+    padding-top: 8px;
+    font-size: 2em;
+    font-weight: 500; } }
+
+.jumbotron {
+  font-family: 'Inconsolata';
+  background-color: #2B3642;
+  background: linear-gradient(rgba(30, 34, 43, 0.85), rgba(30, 34, 43, 0.85)), url("../img/jumbotron-bg.jpg") no-repeat center;
+  background-size: cover;
+  margin-bottom: 0px; }
+  @media (min-width: 1200px) {
+    .jumbotron {
+      padding-top: 6em;
+      padding-bottom: 6em; } }
+  .jumbotron h2.jumbotron-code {
+    font-size: 3em;
+    color: #ABB2BF;
+    display: inline-block; }
+    .jumbotron h2.jumbotron-code .code-top {
+      margin-top: 40px; }
+    .jumbotron h2.jumbotron-code .code-bottom {
+      margin-bottom: 1em; }
+    .jumbotron h2.jumbotron-code span.jumbotron-code-green {
+      color: #16c98d; }
+    .jumbotron h2.jumbotron-code span.jumbotron-code-orange {
+      color: #ffc83f; }
+    .jumbotron h2.jumbotron-code span.jumbotron-code-italic {
+      font-style: italic;
+      color: #67747c; }
+      .jumbotron h2.jumbotron-code span.jumbotron-code-italic span.jumbotron-code-red {
+        color: #fa5e5b; }
+
+.portfolio {
+  padding: 0px; }
+
+li.portfolio {
+  list-style: none;
+  min-height: 200px;
+  text-align: center; }
+  li.portfolio.port-ziptrip {
+    background-color: #45AAA6; }
+    li.portfolio.port-ziptrip img {
+      width: 50%;
+      vertical-align: middle; }
+  li.portfolio.port-dyel {
+    background-color: #346784; }
+    li.portfolio.port-dyel img {
+      width: 50%;
+      vertical-align: middle; }
 
 .btn {
   border-radius: 500px; }
