@@ -78,10 +78,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Nunito', sans-serif;
+  color: white; }
 
 .navbar {
-  background: #5E9CA0; }
+  background: #288ad6; }
   .navbar .navbar-brand {
     color: white; }
     .navbar .navbar-brand a {
@@ -91,19 +92,24 @@ body {
     .navbar .navbar-right a {
       color: white; }
 
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #1877A6; }
+
 @media (min-width: 1200px) {
   .navbar {
     min-height: 70px; }
   .navbar-brand {
     padding-top: 25px;
     font-size: 2em;
-    font-weight: 500; }
+    font-weight: 400; }
   .navbar-right {
-    padding-top: 8px;
+    padding-top: 9px;
     font-size: 2em;
-    font-weight: 500; } }
+    font-weight: 400; } }
 
 .jumbotron {
+  width: 104%;
   font-family: 'Inconsolata';
   background-color: #2B3642;
   background: linear-gradient(rgba(30, 34, 43, 0.85), rgba(30, 34, 43, 0.85)), url("../img/jumbotron-bg.jpg") no-repeat center;
@@ -111,16 +117,22 @@ body {
   margin-bottom: 0px; }
   @media (min-width: 1200px) {
     .jumbotron {
-      padding-top: 6em;
-      padding-bottom: 6em; } }
+      padding-top: 11em;
+      padding-bottom: 11em; } }
   .jumbotron h2.jumbotron-code {
-    font-size: 3em;
+    font-size: 3.4em;
     color: #ABB2BF;
     display: inline-block; }
+    @media (min-width: 300px) {
+      .jumbotron h2.jumbotron-code {
+        font-size: 1.8em; } }
+    @media (min-width: 600px) {
+      .jumbotron h2.jumbotron-code {
+        font-size: 2.8em; } }
     .jumbotron h2.jumbotron-code .code-top {
       margin-top: 40px; }
     .jumbotron h2.jumbotron-code .code-bottom {
-      margin-bottom: 1em; }
+      margin-bottom: 2em; }
     .jumbotron h2.jumbotron-code span.jumbotron-code-green {
       color: #16c98d; }
     .jumbotron h2.jumbotron-code span.jumbotron-code-orange {
@@ -134,23 +146,51 @@ body {
 .portfolio {
   padding: 0px; }
 
-li.portfolio {
+div.portfolio {
   list-style: none;
-  min-height: 200px;
-  text-align: center; }
-  li.portfolio.port-ziptrip {
+  min-height: 300px;
+  text-align: center;
+  position: relative;
+  cursor: pointer; }
+  div.portfolio a {
+    text-decoration: none;
+    color: white; }
+    div.portfolio a .port-desc {
+      position: absolute;
+      left: 0%;
+      bottom: 0px;
+      width: 100%;
+      background-color: #288ad6;
+      font-size: 1.5em;
+      padding: 0.75em 0.5em;
+      margin: 0px;
+      display: none; }
+  div.portfolio.port-ziptrip {
     background-color: #45AAA6; }
-    li.portfolio.port-ziptrip img {
+    div.portfolio.port-ziptrip img {
       width: 50%;
-      vertical-align: middle; }
-  li.portfolio.port-dyel {
+      position: absolute;
+      top: 25%;
+      left: 25%; }
+    div.portfolio.port-ziptrip:hover a .port-desc {
+      display: inline-block; }
+  div.portfolio.port-dyel {
     background-color: #346784; }
-    li.portfolio.port-dyel img {
-      width: 50%;
-      vertical-align: middle; }
+    div.portfolio.port-dyel img {
+      width: 65%;
+      position: absolute;
+      top: 30%;
+      left: 18%; }
+    div.portfolio.port-dyel:hover a .port-desc {
+      display: inline-block; }
 
 .btn {
   border-radius: 500px; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #288ad6;
+  border-color: #288ad6; }
 
 /* ==========================================================================
    Helper classes
