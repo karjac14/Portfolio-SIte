@@ -123,12 +123,12 @@ $blue-dark: #1877A6;
   color: $blue;
   width: 100%;
   text-align: center;
-  padding-top: 75px;
   margin-bottom: 20px;
   @media (min-width: 300px) {
     padding-top: 20px;
   }
   @media (min-width: 768px) {
+    padding-top: 75px;
     &#about.down{
       animation-name: about-down;
       animation-duration: 0.2s;
