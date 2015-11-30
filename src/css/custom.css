@@ -173,16 +173,17 @@ body {
   color: #288ad6;
   width: 100%;
   text-align: center;
-  padding-top: 75px;
   margin-bottom: 20px; }
   @media (min-width: 300px) {
     .section-title {
       padding-top: 20px; } }
   @media (min-width: 768px) {
-    .section-title#about.down {
-      animation-name: about-down;
-      animation-duration: 0.2s;
-      animation-fill-mode: forwards; } }
+    .section-title {
+      padding-top: 75px; }
+      .section-title#about.down {
+        animation-name: about-down;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards; } }
 
 .portfolio {
   display: block;
