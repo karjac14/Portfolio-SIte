@@ -78,8 +78,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  font-family: 'Nunito', sans-serif;
-  color: white; }
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #EEEEEE; }
+
+@keyframes port-img {
+  0% {
+    top: 28%; }
+  25% {
+    top: 27%; }
+  50% {
+    top: 25%; }
+  75% {
+    top: 22%; }
+  100% {
+    top: 21%; } }
+
+@keyframes about-down {
+  0% {
+    margin-top: 0px; }
+  25% {
+    margin-top: 60px; }
+  50% {
+    margin-top: 120px; }
+  100% {
+    margin-top: 180px; } }
 
 .navbar {
   background: #288ad6; }
@@ -91,6 +114,9 @@ body {
     color: white; }
     .navbar .navbar-right a {
       color: white; }
+
+.navbar-toggle .icon-bar {
+  background-color: white; }
 
 .nav > li > a:hover, .nav > li > a:focus {
   text-decoration: none;
@@ -143,54 +169,201 @@ body {
       .jumbotron h2.jumbotron-code span.jumbotron-code-italic span.jumbotron-code-red {
         color: #fa5e5b; }
 
-.portfolio {
-  padding: 0px; }
+.section-title {
+  color: #288ad6;
+  width: 100%;
+  text-align: center;
+  padding-top: 75px;
+  margin-bottom: 20px; }
+  @media (min-width: 300px) {
+    .section-title {
+      padding-top: 20px; } }
+  @media (min-width: 768px) {
+    .section-title#about.down {
+      animation-name: about-down;
+      animation-duration: 0.2s;
+      animation-fill-mode: forwards; } }
 
-div.portfolio {
+.portfolio {
+  display: block;
+  padding: 0px;
+  position: relative; }
+
+div.subportfolio {
   list-style: none;
-  min-height: 300px;
+  height: 200px;
   text-align: center;
   position: relative;
-  cursor: pointer; }
-  div.portfolio a {
-    text-decoration: none;
-    color: white; }
-    div.portfolio a .port-desc {
-      position: absolute;
-      left: 0%;
-      bottom: 0px;
-      width: 100%;
-      background-color: #288ad6;
-      font-size: 1.5em;
-      padding: 0.75em 0.5em;
-      margin: 0px;
-      display: none; }
-  div.portfolio.port-ziptrip {
+  cursor: pointer;
+  text-decoration: none;
+  color: white; }
+  div.subportfolio .port-img {
+    width: 65%;
+    position: absolute;
+    top: 28%;
+    left: 18%; }
+  div.subportfolio .port-desc {
+    background-color: #288ad6;
+    font-size: 1.3em;
+    padding: 0.75em 0.5em;
+    margin: 0px;
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 155px;
+    width: 100%;
+    height: 45px; }
+  div.subportfolio.port-ziptrip {
     background-color: #45AAA6; }
-    div.portfolio.port-ziptrip img {
-      width: 50%;
-      position: absolute;
-      top: 25%;
-      left: 25%; }
-    div.portfolio.port-ziptrip:hover a .port-desc {
+    div.subportfolio.port-ziptrip.clicked .port-desc {
       display: inline-block; }
-  div.portfolio.port-dyel {
+      div.subportfolio.port-ziptrip.clicked .port-desc::before {
+        content: " ";
+        position: absolute;
+        bottom: -20px;
+        left: 15%;
+        width: 15px;
+        height: 12px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #288ad6;
+        z-index: 1; }
+    div.subportfolio.port-ziptrip:hover .port-desc {
+      display: inline-block; }
+    div.subportfolio.port-ziptrip:hover .port-img {
+      animation-name: port-img;
+      animation-duration: 0.2s;
+      animation-fill-mode: forwards; }
+  div.subportfolio.port-dyel {
     background-color: #346784; }
-    div.portfolio.port-dyel img {
-      width: 65%;
-      position: absolute;
-      top: 30%;
-      left: 18%; }
-    div.portfolio.port-dyel:hover a .port-desc {
+    div.subportfolio.port-dyel.clicked .port-desc {
       display: inline-block; }
+      div.subportfolio.port-dyel.clicked .port-desc::before {
+        content: " ";
+        position: absolute;
+        bottom: -20px;
+        left: 15%;
+        width: 15px;
+        height: 12px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #288ad6;
+        z-index: 1; }
+    div.subportfolio.port-dyel:hover .port-desc {
+      display: inline-block; }
+    div.subportfolio.port-dyel:hover .port-img {
+      animation-name: port-img;
+      animation-duration: 0.2s;
+      animation-fill-mode: forwards; }
+  div.subportfolio.port-kvsk {
+    background-color: #FFF; }
+    div.subportfolio.port-kvsk.clicked .port-desc {
+      display: inline-block; }
+      div.subportfolio.port-kvsk.clicked .port-desc::before {
+        content: " ";
+        position: absolute;
+        bottom: -20px;
+        left: 15%;
+        width: 15px;
+        height: 12px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #288ad6;
+        z-index: 1; }
+    div.subportfolio.port-kvsk:hover .port-desc {
+      display: inline-block; }
+    div.subportfolio.port-kvsk:hover .port-img {
+      animation-name: port-img;
+      animation-duration: 0.2s;
+      animation-fill-mode: forwards; }
+
+@media (min-width: 300px) {
+  span.port-long-desc {
+    display: none;
+    background-color: white;
+    font-size: 1.3em;
+    color: #288ad6;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 100%; }
+    span.port-long-desc:after {
+      content: " ";
+      clear: both;
+      display: table; }
+  .container.about {
+    width: 90%;
+    color: #288ad6;
+    line-height: 1.8;
+    color: black; }
+  .container.contact {
+    text-align: center;
+    width: 90%;
+    color: #288ad6;
+    font-size: 2em;
+    color: black; }
+    .container.contact a.contact-details {
+      margin: 50px 0.7em;
+      margin-top: 50px; } }
+
+@media (min-width: 768px) {
+  span.port-long-desc {
+    display: none;
+    background-color: white;
+    font-size: 1.3em;
+    color: #288ad6;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    padding-top: 20px; }
+    span.port-long-desc:after {
+      content: " ";
+      clear: both;
+      display: table; }
+  .container.about {
+    width: 50%;
+    color: #288ad6;
+    line-height: 1.8;
+    color: black; }
+  .container.contact {
+    text-align: center;
+    width: 50%;
+    color: #288ad6;
+    font-size: 2em;
+    color: black;
+    margin-bottom: 2em; }
+    .container.contact a.contact-details {
+      margin: 50px 1em;
+      margin-top: 50px; } }
+
+#profile-photo {
+  margin: 1em auto;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 25%; }
 
 .btn {
   border-radius: 500px; }
+
+.btn-port {
+  margin-bottom: 5px; }
+
+.btn-dsb {
+  cursor: none; }
 
 .btn-primary {
   color: #fff;
   background-color: #288ad6;
   border-color: #288ad6; }
+
+footer {
+  text-align: center;
+  color: black; }
 
 /* ==========================================================================
    Helper classes
