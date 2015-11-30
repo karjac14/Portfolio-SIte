@@ -49,7 +49,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
@@ -63,41 +63,53 @@
         <h3 class="jumbotron-code"><a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a></h3>
       </div>
     </div>
-
+    <h2 id="portfolio" class="section-title"> Portfolio </h2>
     <div class="container-fluid portfolio">
       <!-- Example row of columns -->
       <div class="row">
-          <div class="col-sm-4 portfolio port-ziptrip">
-            <a>
-              <img src="img/port-ziptrip-logo.jpg">
-              <h5 class="port-desc">
+          <div>
+          <div id="port-ziptrip" class="col-sm-4 subportfolio port-ziptrip">
+              <img class="port-img port-ziptrip" src="img/port-ziptrip-logo.jpg">
+              <h5 class="port-desc port-ziptrip">
                 Ziptrip - Road Trip Generator
               </h5>
-            </a>
           </div>
-          <div class="col-sm-4 portfolio  port-dyel">
-            <a>
-              <img src="img/port-dyel-logo.jpg">
+          <span id="port-ziptrip-long-desc" class="port-long-desc port-ziptrip">
+            Ziptrip Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <a href="https://ziptrip.firebaseapp.com/" target="_blank">Site</a> <a href="https://github.com/Roadtripp/roadtrip-gui" target="_blank">Source</a>
+          </span>
+          </div>
+          <div>
+          <div id="port-dyel" class="col-sm-4 subportfolio port-dyel">
+              <img class="port-img" src="img/port-dyel-logo.jpg">
               <h5 class="port-desc">
                 DYEL - Personal Stat Tracker
               </h5>
-            </a>
           </div>
-          <div class="col-sm-4 portfolio port-ziptrip">
-            <a>
-              <img src="img/port-ziptrip-logo.jpg">
+          <span id="port-dyel-long-desc" class="port-long-desc port-dyel">
+            DYEL Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <a href="https://ziptrip.firebaseapp.com/" target="_blank">Site</a> <a href="https://github.com/Roadtripp/roadtrip-gui" target="_blank">Source</a>
+          </span>
+        </div>
+        <div>
+          <div id="port-kvsk" class="col-sm-4 subportfolio port-kvsk">
+              <img class="port-img" src="img/port-kvsk-logo.jpg">
               <h5 class="port-desc">
-                Ziptrip - Road Trip Generator
+                Catalan Opening - MVC Simulation
               </h5>
-            </a>
+          </div>
+          <span id="port-kvsk-long-desc" class="port-long-desc port-kvsk">
+            KVSK Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <a href="https://ziptrip.firebaseapp.com/" target="_blank">Site</a> <a href="https://github.com/Roadtripp/roadtrip-gui" target="_blank">Source</a>
+          </span>
           </div>
           </div>
       </div>
-
+      <h2 class="section-title"> About </h2>
       <div class="container about">
 
       </div>
-
+      <h2 class="section-title"> Contact </h2>
       <div class="container contact">
 
       </div>
@@ -116,6 +128,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
