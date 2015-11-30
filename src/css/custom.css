@@ -78,7 +78,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: white;
   background-color: #EEEEEE; }
 
@@ -98,13 +98,11 @@ body {
   0% {
     margin-top: 0px; }
   25% {
-    margin-top: 50px; }
+    margin-top: 60px; }
   50% {
-    margin-top: 100px; }
-  75% {
-    margin-top: 150px; }
+    margin-top: 120px; }
   100% {
-    margin-top: 200px; } }
+    margin-top: 180px; } }
 
 .navbar {
   background: #288ad6; }
@@ -174,7 +172,9 @@ body {
 .section-title {
   color: #288ad6;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  padding-top: 75px;
+  margin-bottom: 20px; }
   .section-title#about.down {
     animation-name: about-down;
     animation-duration: 0.2s;
@@ -287,7 +287,21 @@ div.subportfolio {
     span.port-long-desc:after {
       content: " ";
       clear: both;
-      display: table; } }
+      display: table; }
+  .container.about {
+    width: 90%;
+    color: #288ad6;
+    line-height: 1.8;
+    color: black; }
+  .container.contact {
+    text-align: center;
+    width: 90%;
+    color: #288ad6;
+    font-size: 2em;
+    color: black; }
+    .container.contact a.contact-details {
+      margin: 50px 0.7em;
+      margin-top: 50px; } }
 
 @media (min-width: 768px) {
   span.port-long-desc {
@@ -305,7 +319,29 @@ div.subportfolio {
     span.port-long-desc:after {
       content: " ";
       clear: both;
-      display: table; } }
+      display: table; }
+  .container.about {
+    width: 50%;
+    color: #288ad6;
+    line-height: 1.8;
+    color: black; }
+  .container.contact {
+    text-align: center;
+    width: 50%;
+    color: #288ad6;
+    font-size: 2em;
+    color: black;
+    margin-bottom: 2em; }
+    .container.contact a.contact-details {
+      margin: 50px 1em;
+      margin-top: 50px; } }
+
+#profile-photo {
+  margin: 1em auto;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 25%; }
 
 .btn {
   border-radius: 500px; }
@@ -320,6 +356,10 @@ div.subportfolio {
   color: #fff;
   background-color: #288ad6;
   border-color: #288ad6; }
+
+footer {
+  text-align: center;
+  color: black; }
 
 /* ==========================================================================
    Helper classes
