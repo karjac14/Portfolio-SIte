@@ -1,33 +1,38 @@
 
+//nav auto scroll
+
+$(function(){$("#nav-about, #learnmore").click(function(){
+  $("html,body").animate({scrollTop:$("#about").offset().top},"1000");return false})});
+
+$(function(){$("#nav-portfolio").click(function(){
+  $("html,body").animate({scrollTop:$("#portfolio").offset().top},"1000");return false})});
+
+$(function(){$("#nav-contact").click(function(){
+  $("html,body").animate({scrollTop:$("#contact").offset().top},"1000");return false})});
 
 
 
+// portfolio event listener
+$('#port-ziptrip').on('click', function(){
+  $(this).toggleClass('clicked');
+	$('#port-dyel,#port-kvsk').removeClass('clicked');
+	$('#about').addClass('down');
+  $('#port-ziptrip-long-desc').slideToggle('50');
+  $('#port-dyel-long-desc,#port-kvsk-long-desc').hide();
+});
 
-//nav stay top
-// credit to: http://stanhub.com/scroll-to-top-then-fixed-navigation-effect-with-jquery-and-css-free-download/
+$('#port-dyel').on('click', function(){
+  $(this).toggleClass('clicked');
+	$('#port-ziptrip,#port-kvsk').removeClass('clicked');
+	$('#about').addClass('down');
+  $('#port-dyel-long-desc').slideToggle('50');
+  $('#port-ziptrip-long-desc,#port-kvsk-long-desc').hide();
+});
 
-$(document).ready(function(){
-	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 60;
-			 if ($(window).scrollTop() > navHeight) {
-				 $('.nav-main').addClass('stay-top');
-         $('.nav-filler').addClass('filling');
-			 }
-			 else {
-				 $('.nav-main').removeClass('stay-top');
-         $('.nav-filler').removeClass('filling');
-			 }
-		});
-
-    $('#nav-toggle').on('click', function (){
-      $('.nav-menu').slideToggle('50');
-    });
-
-		function blinker() {
-		  $('.cursor').fadeOut(300);
-		  $('.cursor').fadeIn(300);
-		}
-		setInterval(blinker, 600);
-
-
-	});
+$('#port-kvsk').on('click', function(){
+  $(this).toggleClass('clicked');
+	$('#port-dyel,#port-ziptrip').removeClass('clicked');
+	$('#about').addClass('down');
+  $('#port-kvsk-long-desc').slideToggle('50');
+  $('#port-ziptrip-long-desc,#port-dyel-long-desc').hide();
+});

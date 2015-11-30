@@ -1,0 +1,488 @@
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #EEEEEE; }
+
+@keyframes port-img {
+  0% {
+    top: 28%; }
+  25% {
+    top: 27%; }
+  50% {
+    top: 25%; }
+  75% {
+    top: 22%; }
+  100% {
+    top: 21%; } }
+
+@keyframes about-down {
+  0% {
+    margin-top: 0px; }
+  25% {
+    margin-top: 60px; }
+  50% {
+    margin-top: 120px; }
+  100% {
+    margin-top: 180px; } }
+
+.navbar {
+  background: #288ad6; }
+  .navbar .navbar-brand {
+    color: white; }
+    .navbar .navbar-brand a {
+      color: white; }
+  .navbar .navbar-right {
+    color: white; }
+    .navbar .navbar-right a {
+      color: white; }
+
+.navbar-toggle .icon-bar {
+  background-color: white; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #1877A6; }
+
+@media (min-width: 1200px) {
+  .navbar {
+    min-height: 70px; }
+  .navbar-brand {
+    padding-top: 25px;
+    font-size: 2em;
+    font-weight: 400; }
+  .navbar-right {
+    padding-top: 9px;
+    font-size: 2em;
+    font-weight: 400; } }
+
+.jumbotron {
+  width: 104%;
+  font-family: 'Inconsolata';
+  background-color: #2B3642;
+  background: linear-gradient(rgba(30, 34, 43, 0.85), rgba(30, 34, 43, 0.85)), url("../img/jumbotron-bg.jpg") no-repeat center;
+  background-size: cover;
+  margin-bottom: 0px; }
+  @media (min-width: 1200px) {
+    .jumbotron {
+      padding-top: 11em;
+      padding-bottom: 11em; } }
+  .jumbotron h2.jumbotron-code {
+    font-size: 3.4em;
+    color: #ABB2BF;
+    display: inline-block; }
+    @media (min-width: 300px) {
+      .jumbotron h2.jumbotron-code {
+        font-size: 1.8em; } }
+    @media (min-width: 600px) {
+      .jumbotron h2.jumbotron-code {
+        font-size: 2.8em; } }
+    .jumbotron h2.jumbotron-code .code-top {
+      margin-top: 40px; }
+    .jumbotron h2.jumbotron-code .code-bottom {
+      margin-bottom: 2em; }
+    .jumbotron h2.jumbotron-code span.jumbotron-code-green {
+      color: #16c98d; }
+    .jumbotron h2.jumbotron-code span.jumbotron-code-orange {
+      color: #ffc83f; }
+    .jumbotron h2.jumbotron-code span.jumbotron-code-italic {
+      font-style: italic;
+      color: #67747c; }
+      .jumbotron h2.jumbotron-code span.jumbotron-code-italic span.jumbotron-code-red {
+        color: #fa5e5b; }
+
+.section-title {
+  color: #288ad6;
+  width: 100%;
+  text-align: center;
+  padding-top: 75px;
+  margin-bottom: 20px; }
+  @media (min-width: 300px) {
+    .section-title {
+      padding-top: 20px; } }
+  @media (min-width: 768px) {
+    .section-title#about.down {
+      animation-name: about-down;
+      animation-duration: 0.2s;
+      animation-fill-mode: forwards; } }
+
+.portfolio {
+  display: block;
+  padding: 0px;
+  position: relative; }
+
+div.subportfolio {
+  list-style: none;
+  height: 200px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: white; }
+  div.subportfolio .port-img {
+    width: 65%;
+    position: absolute;
+    top: 28%;
+    left: 18%; }
+  div.subportfolio .port-desc {
+    background-color: #288ad6;
+    font-size: 1.3em;
+    padding: 0.75em 0.5em;
+    margin: 0px;
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 155px;
+    width: 100%;
+    height: 45px; }
+  div.subportfolio.port-ziptrip {
+    background-color: #45AAA6; }
+    div.subportfolio.port-ziptrip.clicked .port-desc {
+      display: inline-block; }
+      div.subportfolio.port-ziptrip.clicked .port-desc::before {
+        content: " ";
+        position: absolute;
+        bottom: -20px;
+        left: 15%;
+        width: 15px;
+        height: 12px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #288ad6;
+        z-index: 1; }
+    div.subportfolio.port-ziptrip:hover .port-desc {
+      display: inline-block; }
+    div.subportfolio.port-ziptrip:hover .port-img {
+      animation-name: port-img;
+      animation-duration: 0.2s;
+      animation-fill-mode: forwards; }
+  div.subportfolio.port-dyel {
+    background-color: #346784; }
+    div.subportfolio.port-dyel.clicked .port-desc {
+      display: inline-block; }
+      div.subportfolio.port-dyel.clicked .port-desc::before {
+        content: " ";
+        position: absolute;
+        bottom: -20px;
+        left: 15%;
+        width: 15px;
+        height: 12px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #288ad6;
+        z-index: 1; }
+    div.subportfolio.port-dyel:hover .port-desc {
+      display: inline-block; }
+    div.subportfolio.port-dyel:hover .port-img {
+      animation-name: port-img;
+      animation-duration: 0.2s;
+      animation-fill-mode: forwards; }
+  div.subportfolio.port-kvsk {
+    background-color: #FFF; }
+    div.subportfolio.port-kvsk.clicked .port-desc {
+      display: inline-block; }
+      div.subportfolio.port-kvsk.clicked .port-desc::before {
+        content: " ";
+        position: absolute;
+        bottom: -20px;
+        left: 15%;
+        width: 15px;
+        height: 12px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #288ad6;
+        z-index: 1; }
+    div.subportfolio.port-kvsk:hover .port-desc {
+      display: inline-block; }
+    div.subportfolio.port-kvsk:hover .port-img {
+      animation-name: port-img;
+      animation-duration: 0.2s;
+      animation-fill-mode: forwards; }
+
+@media (min-width: 300px) {
+  span.port-long-desc {
+    display: none;
+    background-color: white;
+    font-size: 1.3em;
+    color: #288ad6;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 100%; }
+    span.port-long-desc:after {
+      content: " ";
+      clear: both;
+      display: table; }
+  .container.about {
+    width: 90%;
+    color: #288ad6;
+    line-height: 1.8;
+    color: black; }
+  .container.contact {
+    text-align: center;
+    width: 90%;
+    color: #288ad6;
+    font-size: 2em;
+    color: black; }
+    .container.contact a.contact-details {
+      margin: 50px 0.7em;
+      margin-top: 50px; } }
+
+@media (min-width: 768px) {
+  span.port-long-desc {
+    display: none;
+    background-color: white;
+    font-size: 1.3em;
+    color: #288ad6;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    padding-top: 20px; }
+    span.port-long-desc:after {
+      content: " ";
+      clear: both;
+      display: table; }
+  .container.about {
+    width: 50%;
+    color: #288ad6;
+    line-height: 1.8;
+    color: black; }
+  .container.contact {
+    text-align: center;
+    width: 50%;
+    color: #288ad6;
+    font-size: 2em;
+    color: black;
+    margin-bottom: 2em; }
+    .container.contact a.contact-details {
+      margin: 50px 1em;
+      margin-top: 50px; } }
+
+#profile-photo {
+  margin: 1em auto;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 25%; }
+
+.btn {
+  border-radius: 500px; }
+
+.btn-port {
+  margin-bottom: 5px; }
+
+.btn-dsb {
+  cursor: none; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #288ad6;
+  border-color: #288ad6; }
+
+footer {
+  text-align: center;
+  color: black; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers:
+ */
+.hidden {
+  display: none !important; }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group; }
+  tr,
+  img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }
