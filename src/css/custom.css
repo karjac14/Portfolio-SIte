@@ -94,6 +94,18 @@ body {
   100% {
     top: 21%; } }
 
+@keyframes about-down {
+  0% {
+    margin-top: 0px; }
+  25% {
+    margin-top: 50px; }
+  50% {
+    margin-top: 100px; }
+  75% {
+    margin-top: 150px; }
+  100% {
+    margin-top: 200px; } }
+
 .navbar {
   background: #288ad6; }
   .navbar .navbar-brand {
@@ -163,14 +175,19 @@ body {
   color: #288ad6;
   width: 100%;
   text-align: center; }
+  .section-title#about.down {
+    animation-name: about-down;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards; }
 
 .portfolio {
+  display: block;
   padding: 0px;
   position: relative; }
 
 div.subportfolio {
   list-style: none;
-  min-height: 200px;
+  height: 200px;
   text-align: center;
   position: relative;
   cursor: pointer;
@@ -196,6 +213,17 @@ div.subportfolio {
     background-color: #45AAA6; }
     div.subportfolio.port-ziptrip.clicked .port-desc {
       display: inline-block; }
+      div.subportfolio.port-ziptrip.clicked .port-desc::before {
+        content: " ";
+        position: absolute;
+        bottom: -20px;
+        left: 15%;
+        width: 15px;
+        height: 12px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #288ad6;
+        z-index: 1; }
     div.subportfolio.port-ziptrip:hover .port-desc {
       display: inline-block; }
     div.subportfolio.port-ziptrip:hover .port-img {
@@ -206,6 +234,17 @@ div.subportfolio {
     background-color: #346784; }
     div.subportfolio.port-dyel.clicked .port-desc {
       display: inline-block; }
+      div.subportfolio.port-dyel.clicked .port-desc::before {
+        content: " ";
+        position: absolute;
+        bottom: -20px;
+        left: 15%;
+        width: 15px;
+        height: 12px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #288ad6;
+        z-index: 1; }
     div.subportfolio.port-dyel:hover .port-desc {
       display: inline-block; }
     div.subportfolio.port-dyel:hover .port-img {
@@ -216,6 +255,17 @@ div.subportfolio {
     background-color: #FFF; }
     div.subportfolio.port-kvsk.clicked .port-desc {
       display: inline-block; }
+      div.subportfolio.port-kvsk.clicked .port-desc::before {
+        content: " ";
+        position: absolute;
+        bottom: -20px;
+        left: 15%;
+        width: 15px;
+        height: 12px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #288ad6;
+        z-index: 1; }
     div.subportfolio.port-kvsk:hover .port-desc {
       display: inline-block; }
     div.subportfolio.port-kvsk:hover .port-img {
@@ -223,23 +273,48 @@ div.subportfolio {
       animation-duration: 0.2s;
       animation-fill-mode: forwards; }
 
-span.port-long-desc {
-  display: none;
-  background-color: white;
-  font-size: 1.3em;
-  color: #288ad6;
-  position: absolute;
-  top: 200px;
-  left: 0px;
-  padding: 0 0;
-  width: 100vw; }
-  span.port-long-desc:after {
-    content: " ";
-    clear: both;
-    display: table; }
+@media (min-width: 300px) {
+  span.port-long-desc {
+    display: none;
+    background-color: white;
+    font-size: 1.3em;
+    color: #288ad6;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 100%; }
+    span.port-long-desc:after {
+      content: " ";
+      clear: both;
+      display: table; } }
+
+@media (min-width: 768px) {
+  span.port-long-desc {
+    display: none;
+    background-color: white;
+    font-size: 1.3em;
+    color: #288ad6;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    padding-top: 20px; }
+    span.port-long-desc:after {
+      content: " ";
+      clear: both;
+      display: table; } }
 
 .btn {
   border-radius: 500px; }
+
+.btn-port {
+  margin-bottom: 5px; }
+
+.btn-dsb {
+  cursor: none; }
 
 .btn-primary {
   color: #fff;
