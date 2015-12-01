@@ -163,6 +163,8 @@ body {
       color: #16c98d; }
     .jumbotron h2.jumbotron-code span.jumbotron-code-orange {
       color: #ffc83f; }
+    .jumbotron h2.jumbotron-code span.cursor {
+      color: #528BFF; }
     .jumbotron h2.jumbotron-code span.jumbotron-code-italic {
       font-style: italic;
       color: #67747c; }
@@ -203,6 +205,9 @@ div.subportfolio {
     position: absolute;
     top: 28%;
     left: 18%; }
+    @media (max-width: 768px) {
+      div.subportfolio .port-img {
+        width: 50%; } }
   div.subportfolio .port-desc {
     background-color: #288ad6;
     font-size: 1.3em;

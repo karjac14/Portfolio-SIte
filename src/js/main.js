@@ -10,6 +10,13 @@ $(function(){$("#nav-portfolio").click(function(){
 $(function(){$("#nav-contact").click(function(){
   $("html,body").animate({scrollTop:$("#contact").offset().top},"1000");return false})});
 
+//blinking cursor
+
+function blinker() {
+	  $('.cursor').fadeOut(200);
+	  $('.cursor').fadeIn(200);
+}
+setInterval(blinker, 800);
 
 
 // portfolio event listener
