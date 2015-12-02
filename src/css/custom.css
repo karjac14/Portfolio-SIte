@@ -205,9 +205,6 @@ div.subportfolio {
     position: absolute;
     top: 28%;
     left: 18%; }
-    @media (max-width: 768px) {
-      div.subportfolio .port-img {
-        width: 50%; } }
   div.subportfolio .port-desc {
     background-color: #288ad6;
     font-size: 1.3em;
